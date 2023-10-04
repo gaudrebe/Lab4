@@ -1,24 +1,24 @@
+import org.w3c.dom.Node;
 
 public class searchBT extends BinaryTree {
 	
-	public boolean contains(int item) {
-		if(BinaryNode.data == null) {
+	public boolean contains(Node node, int item) {
+		if(node == null) {
 			return false;
 		} else {
-			if(BinaryNode.data == item) {
+			if(node.data.compareTo(item) == 0) {
 					return true;
 				} else {
-					if(BinaryNode.left || BinaryNode.right) {
-						BinaryNode.left.contains(item);
-						BinaryNode.right.contains(item);
-					} else {
-						return false;
-					}
+					return contains(node.left, item) || contains(node.right, item);
 			}
 		}
 	}
 
 	public int getLevel(int item) {
-		return -1;
+		if (BinaryTree.data == null) {
+			return -1;
+		} else {
+			
+		}
 	}
 }
