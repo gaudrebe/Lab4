@@ -6,7 +6,6 @@ public static class BinaryNode {
 	  protected BinaryNode left;
 	  protected BinaryNode right;
 	}
-
 }
 
 
