@@ -9,5 +9,3 @@ public static class BinaryNode {
 	  protected BinaryNode right;
 	}
 }
-
-
