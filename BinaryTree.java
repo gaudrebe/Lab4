@@ -1,12 +1,12 @@
 public class BinaryTree {
-protected BinaryNode root;
-
-public static class BinaryNode {
-	  protected int data;
-	  protected BinaryNode left;
-	  protected BinaryNode right;
+	protected BinaryNode root;
+	
+	public void testMethod();
+	
+protected static class BinaryNode {
+	  int data;
+	  BinaryNode left;
+	  BinaryNode right;
 	}
-
 }
-
 
