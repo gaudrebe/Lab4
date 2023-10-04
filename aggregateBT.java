@@ -9,7 +9,7 @@ public class aggregateBT extends BinaryTree{
         if (item == 0) {
             return 0;
         }
-        else if (node.left.data > item && node.right.data > item) {
+        else if (node.left.data > item || node.right.data > item) {
             return 0;
         }
         else {
@@ -17,8 +17,23 @@ public class aggregateBT extends BinaryTree{
         }
     }
     
-    public int findMax() {
-        
+    private int findMax() {
+        return findMax(root);
+    }
+    
+    public int findMax(BinaryNode node) {
+        if (node.data == 0) {
+            return 0;
+        }
+        else if (node.left.data > node.data) {
+            return node.left.data;
+        }
+        else if (node.right.data > node.data) {
+            return node.right.data;
+        }
+        else {
+            return node.data;
+        }
     }
 
 }
