@@ -1,10 +1,12 @@
 public class BinaryTree {
 protected BinaryNode root;
 
+public static class BinaryNode {
+	  protected int data;
+	  protected BinaryNode left;
+	  protected BinaryNode right;
+	}
+
 }
 
-public class BinaryNode {
-  private int data;
-  private BinaryNode left;
-  private BinaryNode right;
-}
+
