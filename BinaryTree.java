@@ -3,9 +3,9 @@ public class BinaryTree {
 	
 	public void testMethod();
 	
-public static class BinaryNode {
-	  protected int data;
-	  protected BinaryNode left;
-	  protected BinaryNode right;
+protected static class BinaryNode {
+	  int data;
+	  BinaryNode left;
+	  BinaryNode right;
 	}
 }
