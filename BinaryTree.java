@@ -3,7 +3,7 @@ public class BinaryTree {
 	
 	public void testMethod();
 	
-public class BinaryNode {
+public static class BinaryNode {
 	  protected int data;
 	  protected BinaryNode left;
 	  protected BinaryNode right;
